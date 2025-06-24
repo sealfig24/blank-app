@@ -42,7 +42,7 @@ while True:
     result = cv2.bitwise_and(frame, frame, mask=mask)
     
     # Display the original frame and the result (masked green areas)
-    cv2.imshow('Original', cv2.flip(frame, 1))
+    # cv2.imshow('Original', cv2.flip(frame, 1))
     cv2.imshow('Green Detection', cv2.flip(result, 1))
     
     # Exit the loop when the user presses the 'q' key
