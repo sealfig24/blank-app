@@ -14,7 +14,9 @@ test
 )
 
 # Initialize the webcam (0 is the default camera)
+print("before camera")
 cap = st.camera_input("Take a picture")
+print("test")
 
 # Define the lower and upper range for the color green in HSV
 central_hue = 120
