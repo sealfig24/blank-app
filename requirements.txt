@@ -3,3 +3,4 @@ opencv-python-headless
 pygame
 seaborn
 ffmpy
+streamlit_webrtc
