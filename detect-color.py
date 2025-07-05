@@ -9,7 +9,7 @@ st.title("OpenCV detect color")
 hue = st.slider("Hue", 0, 359, 120, 1)
 
 def video_callback(frame: av.VideoFrame) -> av.VideoFrame:
-    # Conver the av.VideoFrame object to a bunch of pixels, a format that cv2 understands
+    # Convert the av.VideoFrame object to a bunch of pixels, a format that cv2 understands
     img = frame.to_ndarray(format="bgr24")
     
     # Define the lower and upper range for the color green in HSV
