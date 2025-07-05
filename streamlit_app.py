@@ -2,8 +2,9 @@ import streamlit as st
 import cv2
 import numpy as np
 
+enable = st.checkbox("Enable camera")
 flip_image = st.checkbox("Flip image", True)
-img_file_buffer = st.camera_input("Take a picture")
+img_file_buffer = st.camera_input("Take a picture", disabled=not enabled)
 
 if img_file_buffer is not None:
     # To read image file buffer with OpenCV:
